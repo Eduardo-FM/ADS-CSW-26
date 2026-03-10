@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 04</title>
+</head>
+<body>
+
+<h1>Principais formatações</h1>
+<h2>Negrito / Destaque</h2>
+    <p>
+    Na frase temos uma <b>parte do texto em negrito usando a tag B (não semântica)</b>
+    </p>
+    <p>
+    Na frase temos uma <strong>parte do texto em negrito usando a tag STRONG (com semântica)</strong>
+    </p>
+
+
+<h2>Itálico / Ênfase</h2>
+    <p>
+    Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag I (não semântica)
+    </p>
+    <p>
+    Nesta frase vamos entrar com uma palavra em <em>itálico</em> usando a tag EM (com semântica)
+    </p>
+
+
+<h2>Texto Marcador</h2>
+<p>
+Aqui vamos usar um texto com destaque <mark style="background-color: green;">de marcador de texto</mark> usando mark
+</p>
+<p>
+Aqui vamos usar um texto com destaque <mark style="background-color: greenyellow;">de marcador de texto</mark> usando mark
+</p>
+
+
+<h2>Texto grande e pequeno</h2>
+<p>
+Estamos trabalhando aqui com um <big>texto grande</big> e um <small>texto pequeno</small> nesta frase.
+</p>
+
+<h2>Texto deletado</h2>
+
+<p>
+Neste parágrafo vamos trabalhar com um texto<del>que foi excluído</del> da frase (forma semântica)
+</p><h2>Texto deletado</h2>
+
+<p>
+Neste parágrafo vamos trabalhar com um texto
+<del>que foi excluído</del> da frase (forma semântica)
+</p>
+
+
+<h2>Texto inserido</h2>
+
+<p>
+Nesta frase vamos demonstrar como
+<ins>destacar um texto inserido</ins> na frase de forma semântica
+</p>
+
+<p>
+Nesta frase vamos demonstrar como
+<u>destacar um texto inserido</u> na frase de forma não semântica
+</p>
+
+
+<h2>Texto sobrescrito</h2>
+
+<p>
+vamos demonstrar uma fórmula da equação do segundo grau
+ax<sup>2</sup> + bx + c = 0 usando tag sup
+</p>
+
+
+<h2>Texto subscrito</h2>
+
+<p>
+vamos demonstrar o texto subscrito com a fórmula da água
+H<sub>2</sub>O
+</p>
+
+
+<!--Código-->
+
+<h2>Trecho de código fonte</h2>
+
+<p>
+Neste exemplo vou demonstrar um trecho de código inserido
+o comando <code>document.getElementById('edtCodigo')</code>
+que é um comando JavaScript.
+</p>
+
+<p>Inserindo um longo código em python:</p>
+
+<pre>
+<code>
+import math
+
+def equacao_segundo_grau(a, b, c):
+    delta = b**2 - 4*a*c
+
+    if delta < 0:
+        print("Não existem raízes reais")
+
+    elif delta == 0:
+        x = -b / (2*a)
+        print("Raiz:", x)
+
+    else:
+        x1 = (-b + math.sqrt(delta)) / (2*a)
+        x2 = (-b - math.sqrt(delta)) / (2*a)
+
+        print("x1 =", x1)
+        print("x2 =", x2)
+
+equacao_segundo_grau(1, -3, 2)
+</code>
+</pre>
+
+<h2>Citações (quotation) simples</h2>
+
+<p>
+Segundo Steve Jobs <q>A tecnologia move o mundo</q>
+</p>
+
+
+<h2>Citações completas (livros)</h2>
+
+<p>
+Segundo Sandra Kussunoki no seu livro A dança e o ventre:
+</p>
+
+<blockquote>
+Dados existentes sobre intervenções cirúrgicas nos corpos contemporâneos visando a obtenção de um corpo mais próximo do padrão estético tais como lipoaspiração, próteses de silicone, entre outras, comprovam essa busca obsessiva pelo ideal de perfeição, que é baseado principalmente na magreza.
+</blockquote>
+
+
+<h2>Abreviações</h2>
+
+<p>
+Estamos estudando <abbr title="HyperText Markup Language">HTML</abbr> e 
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</p>
+
+
+<h2>Texto Invertido</h2>
+
+<p>Estou estudando HTML</p>
+
+<p>
+<bdo dir="rtl">Estou estudando HTML</bdo>
+</p>
+
+
+</body>
+</html>
