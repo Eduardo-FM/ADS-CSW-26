@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+</head>
+
+<body>
+
+    <body>
+
+        <form>
+            <fieldset>
+                <label>Nome:</label>
+                <input type="text" name="nome"><br><br>
+
+                <label>E-mail pessoal:</label>
+                <input type="email" name="email_pessoal"><br><br>
+
+                <label>E-mail (patte):</label>
+                <input type="email" name="email_patte"><br><br>
+
+                <label>Senha:</label>
+                <input type="password" name="senha"><br><br>
+
+                <label>Idade:</label>
+                <input type="number" name="idade" min="0"><br><br>
+
+                <label>Deixe um comentário:</label><br>
+                <textarea name="comentario" rows="5" cols="40"></textarea><br><br>
+
+                <fieldset>
+                    <legend>Matéria de interesse:</legend>
+                    <input type="checkbox" name="interesse" value="backend"> Backend<br>
+                    <input type="checkbox" name="interesse" value="frontend"> FrontEnd<br>
+                    <input type="checkbox" name="interesse" value="fullstack"> FullStack
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Tipo de Viagem:</legend>
+                    <input type="radio" name="viagem" value="negocios"> Negócios<br>
+                    <input type="radio" name="viagem" value="lazer"> Lazer<br>
+                    <input type="radio" name="viagem" value="turismo"> Turismo<br>
+                    <input type="radio" name="viagem" value="academico"> Acadêmico
+                </fieldset>
+
+                <br>
+
+                <label>Esporte favorito:</label>
+                <select name="esporte">
+                    <option value="futebol">Futebol</option>
+                    <option value="basquete">Basquete</option>
+                    <option value="volei">Vôlei</option>
+                </select>
+
+                <br><br>
+
+                <label>Escolha uma cor:</label>
+                <input type="color" name="cor">
+
+                <br><br>
+
+                <label>Selecione um arquivo:</label>
+                <input type="file" name="arquivo">
+
+                <br><br>
+
+                <label>Data e Hora envio:</label>
+                <input type="datetime-local" name="data_hora">
+
+                <br><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </fieldset>
+        </form>
+
+    </body>
+</body>
+
+</html>
