@@ -4,82 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 09</title>
+    <title>Document</title>
+    <style>
+        .tab {
+            width: 500px;
+
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Formulário</h1>
+    <table class="tab" border="1">
+        <form action="mailto:exemplo@dominio.com" method="post" enctype="text/plain">
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="nome" placeholder="Digite seu nome"></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>E-mail (patter):</td>
+                <td><input type="email" name="email_pessoal" placeholder="Digite seu email com @"></td>
+            </tr>
+            <tr>
+                <td>Senha:</td>
+                <td><input type="password" name="senha"></td>
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td><input type="number" name="idade" min="18"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Deixe um comentário:</label>
+                    <textarea name="comentario" cols="50" rows="6"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="materia">Materia de interesse</label>
+                    <br>
+                    <input type="checkbox" name="materia" value="backend"> BackEnd
+                    <br>
+                    <input type="checkbox" name="materia" value="frontend"> FrontEnd
+                    <br>
+                    <input type="checkbox" name="materia" value="fullstack"> FullStack
+                </td>
 
-    <body>
+                <td><label for="materia">Tipo de Vantagens</label>
+                    <br>
+                    <input type="radio" name="materia" value="backend"> Negócios
+                    <br>
+                    <input type="radio" name="materia" value="frontend"> Lazer
+                    <br>
+                    <input type="radio" name="materia" value="Turismo"> Turismo
+                    <br>
+                    <input type="radio" name="materia" value="academico"> Acadêmico
+                </td>
+            </tr>
 
-        <form>
-            <fieldset>
-                <label>Nome:</label>
-                <input type="text" name="nome"><br><br>
+            </tr>
+            <tr>
+                <td>
+                    <label for="esporte">Esporte Favorito</label>
+                    <select name="esporte" size="4" multiple>
+                        <option value="Futebol">Futebol</option>
+                        <option value="Basquete">Basquete</option>
+                        <option value="Volei">Volei</option>
+                        <option value="Tenis">Tênis</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="investimentos">Investimentos</label>
+                    <select name="investimentos" size="1">
+                        <optgroup label="Baixo Risco">
+                            <option value="Poupança">Poupança</option>
+                            <option value="CDB">CDB</option>
+                            <option value="Tesouro">Tesouro Direito</option>
+                        </optgroup>
 
-                <label>E-mail pessoal:</label>
-                <input type="email" name="email_pessoal"><br><br>
+                        <optgroup label="Médio Risco">
+                            <option value="Fundos">Fundos Imobiliários</option>
+                            <option value="cdi">CDI</option>
+                            <option value="DEBÊNTURES">DEBÊNTURES</option>
+                        </optgroup>
 
-                <label>E-mail (patte):</label>
-                <input type="email" name="email_patte"><br><br>
-
-                <label>Senha:</label>
-                <input type="password" name="senha"><br><br>
-
-                <label>Idade:</label>
-                <input type="number" name="idade" min="0"><br><br>
-
-                <label>Deixe um comentário:</label><br>
-                <textarea name="comentario" rows="5" cols="40"></textarea><br><br>
-
-                <fieldset>
-                    <legend>Matéria de interesse:</legend>
-                    <input type="checkbox" name="interesse" value="backend"> Backend<br>
-                    <input type="checkbox" name="interesse" value="frontend"> FrontEnd<br>
-                    <input type="checkbox" name="interesse" value="fullstack"> FullStack
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-                    <legend>Tipo de Viagem:</legend>
-                    <input type="radio" name="viagem" value="negocios"> Negócios<br>
-                    <input type="radio" name="viagem" value="lazer"> Lazer<br>
-                    <input type="radio" name="viagem" value="turismo"> Turismo<br>
-                    <input type="radio" name="viagem" value="academico"> Acadêmico
-                </fieldset>
-
-                <br>
-
-                <label>Esporte favorito:</label>
-                <select name="esporte">
-                    <option value="futebol">Futebol</option>
-                    <option value="basquete">Basquete</option>
-                    <option value="volei">Vôlei</option>
-                </select>
-
-                <br><br>
-
-                <label>Escolha uma cor:</label>
-                <input type="color" name="cor">
-
-                <br><br>
-
-                <label>Selecione um arquivo:</label>
-                <input type="file" name="arquivo">
-
-                <br><br>
-
-                <label>Data e Hora envio:</label>
-                <input type="datetime-local" name="data_hora">
-
-                <br><br>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </fieldset>
+                        <optgroup label="Alto Risco"></label>
+                            <option value="Criptomoedas">Criptomoedas</option>
+                            <option value="acoes">Ações</option>
+                            <option value="acoes">Opções</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cor">Escolha de cor</label>
+                    <input type="color" name="cor">
+                </td>
+                <td>
+                    <label for="arquivo">Selecione um arquivo</label>
+                    <input type="file" name="arquivo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Data e Hora envio: </label>
+                    <input type="datetime-local" name="data_hora">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar"></input>
+                </td>
+                <td>
+                    <input type="reset" value="Limpar"></input>
+                </td>
+            </tr>
         </form>
-
-    </body>
+    </table>
 </body>
 
 </html>

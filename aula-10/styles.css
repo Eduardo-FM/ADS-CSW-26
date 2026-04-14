@@ -1,0 +1,12 @@
+ h1{background-color: rgb(119, 109, 255);
+        color:white; font-family:Lucida Console;
+        padding:1vw 0 1vw 0;
+    }
+    h2{font-family:Lucida Console;
+        color:rgb(50, 0, 116)
+    }
+
+  h3{
+    display: flex;
+    justify-self: center;
+  }
