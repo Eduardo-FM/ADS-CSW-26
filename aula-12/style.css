@@ -1,0 +1,38 @@
+.text{
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 30px; /* separação clara */
+    .hover{
+        color: red;
+    }
+    .hover:hover{
+        color: green;
+    }
+    .click{
+        color: blue;
+    }
+    .click:active{
+        color: purple;
+    }
+}
+
+.links{
+    padding: 20px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    }
+    .link::before{
+        content: "*";
+    }
+    .link::after{
+        content: " \266C *";
+    }
+}

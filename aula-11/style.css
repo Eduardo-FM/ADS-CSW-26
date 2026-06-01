@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan:ital@0;1&display=swap');
+@font-face {
+    font-family: 'Top Secret';
+    src: url('fonts/TopSecret.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gimme Danger';
+    src: url('fonts/GimmeDanger.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LL Cooper';
+    src: url('fonts/LLCooper.ttf') format('truetype');
+}
+
+.sedan {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.top-secret {
+    font-family: "Top Secret", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gimme-danger {
+    font-family: "Gimme Danger", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ll-cooper{
+    font-family: 'LL Cooper', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
