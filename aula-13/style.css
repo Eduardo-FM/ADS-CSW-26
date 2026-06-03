@@ -1,0 +1,95 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    /* Exercício 1 */
+    .container1 {
+        display: flex;
+        border: 2px solid black;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .container1 div {
+        background-color: lightblue;
+        padding: 20px;
+    }
+
+    /* Exercício 2 */
+    .container2 {
+        display: flex;
+        border: 2px solid black;
+    }
+
+    .container2 div {
+        flex-grow: 1;
+        padding: 20px;
+        text-align: center;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .item-a {
+        background-color: lightcoral;
+    }
+
+    .item-b {
+        background-color: lightgreen;
+    }
+
+    .item-c {
+        background-color: lightblue;
+    }
+
+    .container2 div:hover {
+        border-bottom: 4px solid black;
+    }
+
+    /* Exercício 3 */
+    .container3 {
+        display: flex;
+        border: 2px solid black;
+    }
+
+    .container3 div {
+        flex-grow: 1;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .container3 div:nth-child(3) {
+        flex-grow: 2;
+        background-color: gold;
+    }
+
+    .container3 div:active {
+        background-color: tomato;
+    }
+
+    .container3 div:not(:nth-child(3)) {
+        background-color: lightgray;
+    }
+
+    /* Exercício 4 */
+    .container4 {
+        display: flex;
+        justify-content: flex-end;
+        border: 2px solid black;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .container4 div {
+        background-color: lightseagreen;
+        padding: 20px;
+    }    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+    }
