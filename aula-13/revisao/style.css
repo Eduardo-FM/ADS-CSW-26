@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+
+/*Exercicio 1*/
+.container1 {
+    display: flex;  
+    gap: 20px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.container1 div{
+    background-color: lightblue;
+    padding: 20px;;
+}
+
+/*Exercicio 2*/
+.container2{
+    display: flex;  
+    border: 2px solid black;
+}
+
+.container2 div {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.item-a{
+    background-color: red;
+}
+
+.item-b{
+    background-color: green;
+}
+.item-c{
+    background-color: blue;
+}
+.container2 div:hover{
+    border-bottom: 3px solid black;
+}
+
+/*Exercicio 3*/
+.container3{
+    display: flex;
+    border: 2px solid black;
+}
+
+.container3 div {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: grey;
+}
+
+#item3{
+    flex-grow: 2;
+    background-color: red;
+}
+
+#item3:active {
+    background-color: yellow;
+}
+
+/*Exercicio 4*/
+.container4{
+    display: flex;
+    border: 2px solid black;
+    justify-content: end;
+    padding: 10px;
+    gap: 10px;
+}
+
+.container4 div {
+    padding: 20px;
+    text-align: center;
+    background-color: lightblue;
+}
