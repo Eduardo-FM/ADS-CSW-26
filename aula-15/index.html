@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Cookies</title>
+</head>
+<body>
+<h1>Bem-vindo ao Meu Site</h1>
+<p id="userName"></p>
+<button onclick="setUserName()">Definir Nome</button>
+<button onclick="deleteCookie('userName')">Deletar Nome</button>
+<script>
+// Função para definir o nome do usuário em um cookie
+function setUserName() {
+    const userName = prompt("Digite seu nome:");
+    document.cookie = `userName=${userName}`;
+    document.getElementById("userName").textContent = `Olá, ${userName}!`;
+}
+
+// Função para deletar o cookie do nome do usuário
+function deleteCookie(name) {
+    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+    document.getElementById("userName").textContent = '';
+}
+
+// Verifica se o cookie do nome do usuário já está armazenado
+const cookies = document.cookie.split('; ');
+cookies.forEach(cookie => {
+    const [key, value] = cookie.split('=');
+    if (key === 'userName') {
+        document.getElementById("userName").textContent = `Olá, ${value}!`;
+    }
+});
+</script>
+</body>
+</html>
