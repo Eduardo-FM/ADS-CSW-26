@@ -1,0 +1,61 @@
+body{
+    background-color: #eceaea;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.cards .cartao{
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    flex: 1 1 400px;
+    height: 200px;
+    max-width: 400px;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .cartao .title{
+  
+}
+
+.cards .cartao .paragrafo{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.cards .cartao .botao{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    padding: 12px;
+
+    background-color: #3498db;
+    color: white;
+    
+    align-items: flex-end;
+    
+}
+
+.cards .cartao .botao:hover{
+    background-color: #3272d3;
+}
+
